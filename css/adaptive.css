@@ -1,14 +1,30 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @media only screen and (max-width: 1305px)
 {
     footer
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .contacts
     {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .contacts > *
     {
@@ -17,7 +33,10 @@
     .footer-menu,
     .terms
     {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
         margin: 22px;
     }
     .footer-menu a,
@@ -49,8 +68,13 @@
 {
     .blog-posts
     {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .other-posts
     {
@@ -58,7 +82,10 @@
     }
     .terms
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin-left: 0 !important;
         margin-top: 50px !important;
     }
@@ -69,10 +96,15 @@
     }
     .location-offers
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .location-offers .item
     {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         max-width: 100% !important;
         max-height: 150px;
@@ -88,7 +120,10 @@
 {
     .contacts
     {
-        flex-direction: column !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+            -ms-flex-direction: column !important;
+                flex-direction: column !important;
     }
     .contacts > *
     {
@@ -103,8 +138,13 @@
 {
     footer form
     {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     footer form .btn
     {
@@ -121,6 +161,8 @@
         top: 0;
         background-color: rgb(49, 49, 49);
         padding: 30px;
+        -webkit-transition: 0.3s ease-in right;
+        -o-transition: 0.3s ease-in right;
         transition: 0.3s ease-in right;
         overflow: auto !important;
     }
@@ -130,7 +172,10 @@
     }
     .menu ul
     {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .menu li
     {
@@ -161,6 +206,8 @@
         border: 2px solid #fff;
         border-radius: 3px;
         display: block;
+        -webkit-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
         transition: 0.5s ease;
         z-index: 1100;
     }
@@ -173,6 +220,8 @@
         width: 80%;
         background-color: #fff;
         cursor: pointer;
+        -webkit-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
         transition: 0.5s ease;
     }
     .burger-menu::before
@@ -196,12 +245,16 @@
     }
     .burger-menu.active::before
     {
-        transform: rotateZ(45deg);
+        -webkit-transform: rotateZ(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotateZ(45deg);
         top: 17px;   
     }
     .burger-menu.active::after
     {
-        transform: rotateZ(-45deg);
+        -webkit-transform: rotateZ(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotateZ(-45deg);
         bottom: 17px; 
     }
     .pagination-lines 
@@ -215,9 +268,16 @@
     .offer-info
     {
         padding: 2px !important;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .offer-img
     {

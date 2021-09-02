@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 a {
@@ -57,15 +65,23 @@ section
     margin-bottom: 140px;
 }
 .header-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     padding-top: 45px;
     padding-right: 7px;
     padding-left: 7px;
 }
 .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     
 }
@@ -73,6 +89,8 @@ section
     margin-right: 50px;
     border-bottom: 2px solid #c9453b00;
     padding: 0 5px 5px 5px;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 .menu li:last-child {
@@ -95,6 +113,8 @@ section
     border: 2px #C9453B solid;
     border-radius: 5px;
     padding: 12px 35px 14px 35px;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 
     font-weight: 400;
@@ -119,7 +139,8 @@ section
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     opacity: 0.6;
     top: 0;
     left: 0;
@@ -133,7 +154,9 @@ section
 {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     width: 100%;
 }
 .start-header h1
@@ -156,8 +179,12 @@ section
     text-align: center;
     margin-top: 20px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .quote-inner
 {
@@ -166,14 +193,20 @@ section
 
 .location-offers
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 50px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .location-offers .item
 {
     max-width: 360px;
     text-align: center;
+    -webkit-transition: 0.3s ease box-shadow;
+    -o-transition: 0.3s ease box-shadow;
     transition: 0.3s ease box-shadow;
     min-height: 100%;
     overflow: hidden;
@@ -183,7 +216,8 @@ section
 }
 .location-offers .item:hover
 {
-    box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
 }
 .offer-info
 {
@@ -197,8 +231,13 @@ section
 
 .special-offers
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-width: 0;
 }
 .special-offers-slick
@@ -222,11 +261,15 @@ section
 }
 .quote-info
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 15px;
 }
 .quote-item
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     white-space: nowrap;
     margin-bottom: 16px;
@@ -256,9 +299,15 @@ section
 .pagination
 {
     margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 .button-prev,
@@ -269,6 +318,8 @@ section
 
     padding: 10px;
     border-radius: 50%;
+    -webkit-transition: 0.3s ease background-color;
+    -o-transition: 0.3s ease background-color;
     transition: 0.3s ease background-color;
 }
 .button-prev:hover,
@@ -279,14 +330,20 @@ section
 .pagination-lines
 {
     width: auto !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .swiper-pagination-bullet
 {
     width: 75px;
     border-radius: 10px !important;
     background-color: #C9453B !important;
+    -webkit-transition: 0.3s ease opacity;
+    -o-transition: 0.3s ease opacity;
     transition: 0.3s ease opacity;
     height: 5px !important;
 } 
@@ -300,10 +357,14 @@ section
 }
 .blog-posts
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 56px;
     /* justify-content: center; */
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .main-post
 {
@@ -334,6 +395,8 @@ section
 }
 .small-post
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .small-post__image
@@ -345,8 +408,12 @@ section
 footer
 {
     background: rgba(38, 148, 153, 0.04);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 70px 231px 78px 257px;
 }
 .footer-logo
@@ -374,8 +441,13 @@ footer a:hover
 .footer-menu,
 .terms
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .footer-menu a,
 .terms a
@@ -402,7 +474,10 @@ footer form input
     padding: 10px 10px 10px 20px;
     border: 1px solid #0000002c;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.020);
+    -webkit-box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.020);
+            box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.020);
+    -webkit-transition: 0.3s ease border;
+    -o-transition: 0.3s ease border;
     transition: 0.3s ease border;
 }
 footer form input:focus
