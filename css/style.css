@@ -1,0 +1,412 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    display: inline-block;
+}
+body {
+    position: relative;
+}
+header {
+    position: absolute;
+    width: 100%;
+
+    z-index: 999;
+}
+.standart-text
+{
+    line-height: 160%;
+    color: #000;
+    opacity: 0.6;
+}
+.btn-mobile
+{
+    display: none;
+}
+h1, h2, h3
+{
+    font-family: 'Gelasio', serif;
+}
+h1
+{
+    color: #fff;
+    font-size: 65px;
+}
+h2
+{
+    width: 100%;
+    text-align: center;
+    font-size: 43px;
+    font-weight: 500;
+}
+h3
+{
+    font-size: 24px;
+    font-weight: 500;
+}
+ul
+{
+    list-style: none;
+}
+section
+{
+    margin-bottom: 140px;
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 45px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+.menu ul {
+    display: flex;
+    
+}
+.menu li {
+    margin-right: 50px;
+    border-bottom: 2px solid #c9453b00;
+    padding: 0 5px 5px 5px;
+    transition: 0.3s ease;
+}
+.menu li:last-child {
+    margin-right: 0px;
+}
+.menu li a {
+    color: #fff;
+}
+.menu li:hover
+{
+    border-bottom: 2px solid #c9453b;
+}
+.burger-menu
+{
+    display: none;
+}
+.btn
+{
+    background-color: #C9453B;
+    border: 2px #C9453B solid;
+    border-radius: 5px;
+    padding: 12px 35px 14px 35px;
+    transition: 0.3s ease;
+
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover
+{
+    background-color: #ffffff;
+
+    color: #000;
+}
+
+.start-screen {
+    position: relative;
+    height: 100vh;
+    background-color: #000;
+}
+.start-screen video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+}
+.container {
+    max-width: 1130px;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+.start-header
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.start-header h1
+{
+    max-width: 804px;
+}
+.start-header .text-quote
+{
+    margin-top: 30px;
+    max-width: 458px;
+    color: #fff;
+    text-align: left;
+}
+.start-header .btn
+{
+    margin-top: 40px;
+}
+.text-quote
+{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.quote-inner
+{
+    max-width: 735px;
+}
+
+.location-offers
+{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.location-offers .item
+{
+    max-width: 360px;
+    text-align: center;
+    transition: 0.3s ease box-shadow;
+    min-height: 100%;
+    overflow: hidden;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.location-offers .item:hover
+{
+    box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+}
+.offer-info
+{
+    padding: 35px 34px 34px 34px;
+}
+.offer-text
+{
+    margin-top: 10px;
+}
+
+
+.special-offers
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+.special-offers-slick
+{
+    overflow: hidden;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.special-offers-slick .item
+{
+    color: rgba(0, 0, 0, 0.6);
+}
+.special-offers-slick h3
+{
+    color: #000;
+}
+.special-img
+{
+    margin-bottom: 20px;
+}
+.quote-info
+{
+    display: flex;
+    margin-top: 15px;
+}
+.quote-item
+{
+    display: flex;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+.quote-item:last-child
+{
+    color: #000;
+}
+.quote-item img
+{
+    margin-right: 10px;
+}
+.quote-item:first-child
+{
+    margin-right: 50px;
+}
+.special-price
+{
+    margin-top: 8px;
+}
+.special-price span
+{
+    color: #000;
+    font-weight: 500;
+}
+.pagination
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.button-prev,
+.button-next
+{
+    position: relative;
+    cursor: pointer;
+
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s ease background-color;
+}
+.button-prev:hover,
+.button-next:hover
+{
+    background-color: rgb(245, 245, 245);
+}
+.pagination-lines
+{
+    width: auto !important;
+    display: flex;
+    align-items: center;
+}
+.swiper-pagination-bullet
+{
+    width: 75px;
+    border-radius: 10px !important;
+    background-color: #C9453B !important;
+    transition: 0.3s ease opacity;
+    height: 5px !important;
+} 
+.button-prev
+{
+    margin-right: 50px;
+}
+.button-next
+{
+    margin-left: 50px;
+}
+.blog-posts
+{
+    display: flex;
+    margin-top: 56px;
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+.main-post
+{
+    max-width: 554px;
+    /* margin-right: 35px; */
+}
+.other-posts
+{
+    max-width: 540px;
+}
+.blog-posts h3
+{
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+.blog-posts a
+{
+    margin-top: 10px;
+}
+.blog-posts a:hover
+{
+    color: #C9453B
+}
+.post-image,
+.small-post__image
+{
+    margin-top: 0;
+}
+.small-post
+{
+    display: flex;
+}
+.small-post__image
+{
+    margin-right: 27px;
+}
+
+
+footer
+{
+    background: rgba(38, 148, 153, 0.04);
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 231px 78px 257px;
+}
+.footer-logo
+{
+    margin-bottom: 40px;
+}
+.contact-us
+{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.social-sites
+{
+    margin-top: 10px;
+}
+footer a:hover
+{
+    color: #C9453B
+}
+.social-sites a
+{
+    margin-right: 27px;
+}
+.footer-menu,
+.terms
+{
+    display: flex;
+    flex-direction: column;
+}
+.footer-menu a,
+.terms a
+{
+    margin-bottom: 20px;
+}
+.roboto-h2
+{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+}
+footer form
+{
+    margin-top: 42px;
+}
+footer form .btn
+{
+    margin-left: 35px;
+}
+footer form input
+{
+    background-color: transparent;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid #0000002c;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.020);
+    transition: 0.3s ease border;
+}
+footer form input:focus
+{
+    outline: none;
+    border: 1px solid #C9453B;
+}

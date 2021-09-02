@@ -1,0 +1,253 @@
+@media only screen and (max-width: 1305px)
+{
+    footer
+    {
+        flex-direction: column;
+    }
+    .contacts
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contacts > *
+    {
+        margin: 0 !important;
+    }
+    .footer-menu,
+    .terms
+    {
+        flex-direction: row;
+        margin: 22px;
+    }
+    .footer-menu a,
+    .terms a
+    {
+        margin: 0 20px 0 0 !important;
+    }
+    .footer-menu
+    {
+        margin-top: 40px;
+    }
+    .subscribe
+    {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 1115px)
+{
+    .cu-text
+    {
+        display: none;
+    }
+    .footer-menu
+    {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1110px)
+{
+    .blog-posts
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .other-posts
+    {
+        margin-top: 30px;
+    }
+    .terms
+    {
+        flex-direction: column;
+        margin-left: 0 !important;
+        margin-top: 50px !important;
+    }
+    .terms a
+    {
+        margin-bottom: 30px !important;
+        font-size: 20px;
+    }
+    .location-offers
+    {
+        flex-direction: column;
+    }
+    .location-offers .item
+    {
+        display: flex;
+        max-width: 100% !important;
+        max-height: 150px;
+        margin-bottom: 30px;
+        text-align:left !important;
+    }
+    .offer-img img
+    {
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 1000px)
+{
+    .contacts
+    {
+        flex-direction: column !important;
+    }
+    .contacts > *
+    {
+        margin-bottom: 20px !important;
+    }
+    h1
+    {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 840px)
+{
+    footer form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    footer form .btn
+    {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .menu
+    {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        right: -100%;
+        top: 0;
+        background-color: rgb(49, 49, 49);
+        padding: 30px;
+        transition: 0.3s ease-in right;
+        overflow: auto !important;
+    }
+    .menu.active
+    {
+        right: 0;
+    }
+    .menu ul
+    {
+        flex-direction: column;
+    }
+    .menu li
+    {
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+    html.lock
+    {
+        overflow: hidden;
+    }
+    .btn-desktop
+    {
+        display: none;
+    }
+    .btn-mobile
+    {
+        display: block;
+        max-width: 400px;
+    }
+
+    .burger-menu
+    {
+        position: fixed;
+        right: 10px;
+        top: 20px;
+        width: 50px;
+        height: 40px;
+        border: 2px solid #fff;
+        border-radius: 3px;
+        display: block;
+        transition: 0.5s ease;
+        z-index: 1100;
+    }
+    .burger-menu::before,
+    .burger-menu::after
+    {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 80%;
+        background-color: #fff;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    .burger-menu::before
+    {
+        left: 4px;
+        top: 11px;
+    }
+    .burger-menu::after
+    {
+        left: 4px;
+        bottom: 11px;
+    }
+    .burger-menu.black
+    {
+        border: 2px solid rgb(0, 0, 0);
+    }
+    .burger-menu.black::before,
+    .burger-menu.black::after
+    {
+        background-color: rgb(0, 0, 0);
+    }
+    .burger-menu.active::before
+    {
+        transform: rotateZ(45deg);
+        top: 17px;   
+    }
+    .burger-menu.active::after
+    {
+        transform: rotateZ(-45deg);
+        bottom: 17px; 
+    }
+    .pagination-lines 
+    {
+        display: none;
+    }
+    footer
+    {
+        padding: 5px !important;
+    }
+    .offer-info
+    {
+        padding: 2px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .offer-img
+    {
+        max-width: 180px;
+    }
+}
+@media only screen and (max-width: 575px)
+{
+    .post-image img
+    {
+        width: 100%;
+    }
+    .other-posts
+    {
+        display: none;
+    }
+}
+@media only screen and (max-width: 373px)
+{
+    .offer-text
+    {
+        display: none;
+    }
+    h1
+    {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    h2
+    {
+        font-size: 18px;
+    }
+}
